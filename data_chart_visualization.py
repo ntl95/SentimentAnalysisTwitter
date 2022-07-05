@@ -31,4 +31,5 @@ def data_visualization(df):
                                  line_color='red'
                                  )
                       )
+
     fig.show()
