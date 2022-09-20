@@ -12,7 +12,7 @@ def create_csv():
 
     # Using TwitterSearchScraper to scrape data
     for i, tweet in enumerate(
-            sntwitter.TwitterSearchScraper('radiation 5g since:2019-01-01 until:2022-06-20 lang:en').get_items()):
+            sntwitter.TwitterSearchScraper('5g radiation since:2020-01-01 until:2020-12-31 lang:it').get_items()):
         if i > maxTweets:
             break
         print(i)

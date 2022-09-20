@@ -9,13 +9,9 @@ def main():
     scr.create_csv()
     df = pd.read_csv('5g.csv')
     sentiment.create_csv_with_sentiment(df)
-
     df2 = pd.read_csv('final.csv')
     chart.data_visualization(df2)
-    df_positive = wdc.selection_positive_sentiment(df2)
-    df_negative = wdc.selection_negative_sentiment(df2)
-    wdc.show_word_cloud(df_positive, 'positive')
-    wdc.show_word_cloud(df_negative, 'negative')
+    wdc.show_word_cloud(df2)
 
 
 if __name__ == '__main__':
